@@ -1,0 +1,11 @@
+<html>
+<body>
+    {% if session['logged_in'] %}
+    <center>
+        <h3>Hello, {{ session['username'] }}</h3>
+        <h3>message from server: {{ message }}</h3>
+        <a href="/logout">logout</a>
+    </center>
+    {% endif %}
+</body>
+</html>
